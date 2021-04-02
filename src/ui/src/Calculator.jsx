@@ -14,9 +14,16 @@ export const Calculator = ({value, setValue}) => {
         value={value}
         setValue={setValue} />
         <br/>
+        Capture the SOMETHING state:
+        <br/>
+        <br/>
         <input type="text" onChange={handleChange} />
         <br/>
-        SOMETHING: {something}
+        <br/>
+        Value of the SOMETHING state: 
+        <br/>
+        {something}
+        <br/><br/>
     </div>
   );
 }
