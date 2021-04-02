@@ -1,13 +1,18 @@
 import Calculator from './Calculator';
 
-export const Computer = ({temperature, setTemperature}) => {
+export const Computer = ({value, setValue}) => {
     
   return (
     <div>
-      temperature: {temperature}
+      <br/>
+      Global value:
+      <br/>
+      <br/>
+      {value}
+      <br/><br/>
       <Calculator
-        temperature={temperature}
-        setTemperature={setTemperature} />
+        value={value}
+        setValue={setValue} />
     </div>
   );
 }

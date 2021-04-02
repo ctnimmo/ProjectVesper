@@ -1,5 +1,6 @@
 import {useState,useEffect} from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import logo from './images/ProjectVesperLogo.png';
 import './App.css';
 import AppContext from './contexts/AppContext';
 
@@ -10,7 +11,7 @@ import {ClockSecondsHand,ClockSecondsHandOnly,ClockMinutesHandOnly,ClockHoursHan
 
 function App(props) {
   
-  const [temperature, setTemperature] = useState('');
+  const [value, setValue] = useState('');
   const [something, setSomething] = useState(22);
   
   // const d = new Date();
@@ -35,23 +36,11 @@ function App(props) {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <div>
-          </div>
+          Project Vesper
         </header>
         <Computer
-          temperature={temperature}
-          setTemperature={setTemperature} />
+          value={value}
+          setValue={setValue} />
 
         <ClockBackground width="200" height="200" style={{position:"relative",left:"300px"}}/>
         <ClockSecondsHandOnly length="100" seconds={seconds} style={{position:"relative",left:"100px"}}/>
@@ -64,16 +53,3 @@ function App(props) {
 }
 
 export default App;
-
-/*
-
-
-        <ClockBackground width="200" height="200"/>
-        <ClockSecondsHand width="200" height="200"/>
-        
-              <p>
-        {props.seconds}
-      </p> 
-
-
-*/

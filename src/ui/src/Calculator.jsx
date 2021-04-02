@@ -1,8 +1,8 @@
-import TemperatureInput from './TemperatureInput';
+import ValueInput from './ValueInput';
 import AppContext from './contexts/AppContext';
 import {useContext} from 'react';
 
-export const Calculator = ({temperature, setTemperature}) => {
+export const Calculator = ({value, setValue}) => {
   
   const {something,setSomething} = useContext(AppContext);
   
@@ -10,9 +10,9 @@ export const Calculator = ({temperature, setTemperature}) => {
   
   return (
     <div>
-      <TemperatureInput
-        temperature={temperature}
-        setTemperature={setTemperature} />
+      <ValueInput
+        value={value}
+        setValue={setValue} />
         <br/>
         <input type="text" onChange={handleChange} />
         <br/>
