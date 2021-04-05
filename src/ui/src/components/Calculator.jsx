@@ -1,10 +1,11 @@
-import ValueInput from './ValueInput';
-import AppContext from './contexts/AppContext';
 import {useContext} from 'react';
+import AppContext from '../contexts/AppContext';
+import ValueInput from './ValueInput';
 
-export const Calculator = ({value, setValue}) => {
+export const Calculator = () => {
   
   const {something,setSomething} = useContext(AppContext);
+  const {value,setValue} = useContext(AppContext);
   
   const handleChange = (e) => {setSomething(e.target.value);}
   

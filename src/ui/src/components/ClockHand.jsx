@@ -1,5 +1,7 @@
-import {useEffect,useRef,useState} from 'react';
+import {useEffect,useRef} from 'react';
+import {drawClockHand} from '../utils/drawClockHand'
 
+/*
 function drawClockHand(ctx,angle,length,color,lengthMultiplier){ //(ctx, position, length, width, color) {
   color = color || "black";
   ctx.clearRect(0, 0, length * 2, length * 2);
@@ -18,39 +20,7 @@ function drawClockHand(ctx,angle,length,color,lengthMultiplier){ //(ctx, positio
   ctx.rotate(-rotAng);
   ctx.translate(-length, -length);
 }
-
-export const ClockSecondsHandOnly = ({style,length,seconds}) => {
-  
-  const ticks = seconds;
-  const colour = "red";
-  const lengthMultiplier = 0.65;
-  
-  return (    
-    <ClockHand ticks={ticks} colour={colour} lengthMultiplier={lengthMultiplier} length={length} style={style} />
-  );
-}
-
-export const ClockMinutesHandOnly = ({style,length,minutes}) => {
-  
-  const ticks = minutes;
-  const colour = "black";
-  const lengthMultiplier = 0.75;
-  
-  return (    
-    <ClockHand ticks={ticks} colour={colour} lengthMultiplier={lengthMultiplier} length={length} style={style} />
-  );
-}
-
-export const ClockHoursHandOnly = ({style,length,hours,minutes}) => {
-  
-  const ticks = 5 * ((hours % 12) + (minutes / 60));
-  const colour = "black";
-  const lengthMultiplier = 0.55;
-      
-  return (    
-    <ClockHand ticks={ticks} colour={colour} lengthMultiplier={lengthMultiplier} length={length} style={style} />
-  );
-}
+*/
 
 export const ClockHand = ({style,ticks,length,colour,lengthMultiplier}) => {
   

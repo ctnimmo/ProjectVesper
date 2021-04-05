@@ -1,5 +1,9 @@
+import {useContext} from 'react';
+import AppContext from '../contexts/AppContext';
 
-export const ValueInput = ({value,setValue}) => {
+export const ValueInput = () => {
+
+  const {value,setValue} = useContext(AppContext);  
 
   const handleChange = (e) => {setValue(e.target.value);}
 
