@@ -1,7 +1,7 @@
 // ETHSCAN BLOCK CALLS
 
 // My API Key - note: should not store here!!
-const YourApiKeyToken = "MVI4D114V86VQK4ENMQ5IZ6G7V8AXQJ1UZ";
+const YourApiKeyToken = "";
 const AppName = "MyFirstEthScanApp";
 
 
